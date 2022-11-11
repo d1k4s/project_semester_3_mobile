@@ -1,9 +1,11 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
 
-class anu extends StatelessWidget {
-  const anu({super.key});
+class Profile extends StatelessWidget {
+  const Profile({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -30,7 +32,7 @@ class anu extends StatelessWidget {
                       ),
                       Container(
                         child: Padding(
-                          padding: const EdgeInsets.only(left: 30),
+                          padding: const EdgeInsets.only(left: 25),
                           child: Text('view and edit profile',
                               style: TextStyle(
                                   fontWeight: FontWeight.w300,
@@ -49,6 +51,13 @@ class anu extends StatelessWidget {
                   ),
                 ],
               ),
+              SizedBox(
+                height: 50,
+              ),
+              Padding(
+                padding: const EdgeInsets.only(left: 25),
+                child: Text('Edit Profile'),
+              )
             ],
           ),
         ),

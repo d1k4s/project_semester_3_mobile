@@ -1,4 +1,6 @@
 // import 'package:fluid_bottom_nav_bar/fluid_bottom_nav_bar.dart';
+// ignore_for_file: prefer_const_constructors
+
 import 'package:google_nav_bar/google_nav_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:ui_tnbts/page/profile.dart';
@@ -14,8 +16,11 @@ class ProfilePage extends StatefulWidget {
 class _ProfilePageState extends State<ProfilePage> {
   int currentTab = 0;
   final List<Widget> screens = [
-    ProfilePage(),
+    Text('home'),
+    Text('sop'),
+    Text('tutorial'),
     Tutorial(),
+    Profile(),
   ];
 
   final PageStorageBucket bucket = PageStorageBucket();
@@ -24,6 +29,7 @@ class _ProfilePageState extends State<ProfilePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      body: Center(child: screens.elementAt(currentTab)),
       backgroundColor: Colors.grey[300],
       bottomNavigationBar: Container(
         color: Colors.grey[200],
@@ -35,12 +41,52 @@ class _ProfilePageState extends State<ProfilePage> {
             activeColor: Color(0xFF25BAC2),
             gap: 8,
             padding: EdgeInsets.all(16),
-            tabs: const [
-              GButton(icon: Icons.home, text: 'Home'),
-              GButton(icon: Icons.info, text: 'SOP'),
-              GButton(icon: Icons.auto_stories, text: 'Tutorial'),
-              GButton(icon: Icons.account_balance_wallet, text: 'Payments'),
-              GButton(icon: Icons.person, text: 'Profile'),
+            tabs: [
+              GButton(
+                icon: Icons.home,
+                text: 'Home',
+                onPressed: () {
+                  setState(() {
+                    currentTab = 0;
+                  });
+                },
+              ),
+              GButton(
+                icon: Icons.info,
+                text: 'SOP',
+                onPressed: () {
+                  setState(() {
+                    currentTab = 1;
+                  });
+                },
+              ),
+              GButton(
+                icon: Icons.auto_stories,
+                text: 'Tutorial',
+                onPressed: () {
+                  setState(() {
+                    currentTab = 2;
+                  });
+                },
+              ),
+              GButton(
+                icon: Icons.account_balance_wallet,
+                text: 'Payments',
+                onPressed: () {
+                  setState(() {
+                    currentTab = 3;
+                  });
+                },
+              ),
+              GButton(
+                icon: Icons.person,
+                text: 'Profile',
+                onPressed: () {
+                  setState(() {
+                    currentTab = 4;
+                  });
+                },
+              ),
             ],
           ),
         ),
