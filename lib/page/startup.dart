@@ -72,21 +72,6 @@ class _StartUpState extends State<StartUp> {
             ),
             //btn
             SizedBox(height: 260),
-            // Padding(
-            //   padding: const EdgeInsets.symmetric(horizontal: 25.0),
-            //   child: Container(
-            //     padding: EdgeInsets.all(15),
-            //     decoration: BoxDecoration(
-            //         color: Color(0xFF25BAC2),
-            //         borderRadius: BorderRadius.circular(30)),
-            //     child: Center(
-            //       child: Text(
-            //         'Get Started',
-            //         style: TextStyle(color: Colors.white),
-            //       ),
-            //     ),
-            //   ),
-            // ),
             Container(
               padding: const EdgeInsets.symmetric(horizontal: 25.0),
               decoration: BoxDecoration(),

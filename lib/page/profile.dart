@@ -1,7 +1,7 @@
-// ignore_for_file: prefer_const_constructors
+// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
 import 'dart:ui';
-
+import 'package:ui_tnbts/page/tutorial.dart';
 import 'package:flutter/material.dart';
 
 class Profile extends StatelessWidget {
@@ -54,10 +54,94 @@ class Profile extends StatelessWidget {
               SizedBox(
                 height: 50,
               ),
-              Padding(
-                padding: const EdgeInsets.only(left: 25),
-                child: Text('Edit Profile'),
-              )
+              Row(
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.only(left: 25),
+                    child: Text(
+                      'Edit Profile',
+                      style: TextStyle(
+                        fontWeight: FontWeight.w400,
+                        fontSize: 20,
+                      ),
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(left: 195),
+                    child: Icon(Icons.person_search_rounded,
+                        size: 40.0, color: Colors.grey.shade400),
+                  ),
+                ],
+              ),
+              SizedBox(
+                height: 40,
+              ),
+              Row(
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.only(left: 15),
+                    child: TextButton(
+                      onPressed: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => const Tutorial()));
+                      },
+                      child: Text(
+                        'Tutorial                                           ',
+                        style: TextStyle(
+                            fontWeight: FontWeight.w400,
+                            fontSize: 20,
+                            color: Colors.black),
+                      ),
+                    ),
+                  ),
+                  Icon(Icons.auto_stories,
+                      size: 40.0, color: Colors.grey.shade400)
+                ],
+              ),
+              SizedBox(
+                height: 40,
+              ),
+              Row(
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.only(left: 25),
+                    child: Text(
+                      'SOP',
+                      style: TextStyle(
+                        fontWeight: FontWeight.w400,
+                        fontSize: 20,
+                      ),
+                    ),
+                  ),
+                  Padding(
+                      padding: const EdgeInsets.only(left: 250),
+                      child: Icon(Icons.info,
+                          size: 40.0, color: Colors.grey.shade400)),
+                ],
+              ),
+              SizedBox(
+                height: 40,
+              ),
+              Row(
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.only(left: 25),
+                    child: Text(
+                      'Settings',
+                      style: TextStyle(
+                        fontWeight: FontWeight.w400,
+                        fontSize: 20,
+                      ),
+                    ),
+                  ),
+                  Padding(
+                      padding: const EdgeInsets.only(left: 215),
+                      child: Icon(Icons.settings,
+                          size: 40.0, color: Colors.grey.shade400)),
+                ],
+              ),
             ],
           ),
         ),

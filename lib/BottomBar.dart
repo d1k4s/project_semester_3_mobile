@@ -34,7 +34,7 @@ class _ProfilePageState extends State<ProfilePage> {
       bottomNavigationBar: Container(
         color: Colors.grey[200],
         child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 7),
+          padding: const EdgeInsets.symmetric(horizontal: 50, vertical: 7),
           child: GNav(
             backgroundColor: Colors.grey.shade200,
             color: Colors.grey[500],
@@ -51,24 +51,24 @@ class _ProfilePageState extends State<ProfilePage> {
                   });
                 },
               ),
-              GButton(
-                icon: Icons.info,
-                text: 'SOP',
-                onPressed: () {
-                  setState(() {
-                    currentTab = 1;
-                  });
-                },
-              ),
-              GButton(
-                icon: Icons.auto_stories,
-                text: 'Tutorial',
-                onPressed: () {
-                  setState(() {
-                    currentTab = 2;
-                  });
-                },
-              ),
+              // GButton(
+              //   icon: Icons.info,
+              //   text: 'SOP',
+              //   onPressed: () {
+              //     setState(() {
+              //       currentTab = 1;
+              //     });
+              //   },
+              // ),
+              // GButton(
+              //   icon: Icons.auto_stories,
+              //   text: 'Tutorial',
+              //   onPressed: () {
+              //     setState(() {
+              //       currentTab = 2;
+              //     });
+              //   },
+              // ),
               GButton(
                 icon: Icons.account_balance_wallet,
                 text: 'Payments',
