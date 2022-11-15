@@ -42,12 +42,15 @@ class Tutorial extends StatelessWidget {
             ),
           ],
         ),
-        Center(
-          child: Text('reservation?',
-              style: TextStyle(
-                fontWeight: FontWeight.bold,
-                fontSize: 33,
-              )),
+        Container(
+          child: Padding(
+            padding: const EdgeInsets.fromLTRB(25, 140, 0, 0),
+            child: Text('reservation?',
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 33,
+                )),
+          ),
         )
       ]),
     );

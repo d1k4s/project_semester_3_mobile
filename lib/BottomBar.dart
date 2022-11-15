@@ -18,7 +18,7 @@ class _ProfilePageState extends State<ProfilePage> {
   final List<Widget> screens = [
     Text('home'),
     Text('sop'),
-    Text('tutorial'),
+    Text('hahahahha'),
     Tutorial(),
     Profile(),
   ];
@@ -74,7 +74,7 @@ class _ProfilePageState extends State<ProfilePage> {
                 text: 'Payments',
                 onPressed: () {
                   setState(() {
-                    currentTab = 3;
+                    currentTab = 2;
                   });
                 },
               ),
