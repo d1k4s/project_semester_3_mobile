@@ -1,8 +1,7 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
-// import 'package:ui_tnbts/BottomBar.dart';
-// import 'package:ui_tnbts/page/profile.dart';
+import '';
 import 'package:ui_tnbts/page/startup.dart';
 
 void main() {
