@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'BottomBar.dart';
 
 class StartUp extends StatefulWidget {
   const StartUp({super.key});
@@ -69,18 +70,20 @@ class _StartUpState extends State<StartUp> {
             ),
             //btn
             SizedBox(height: 260),
-            Padding(
+            Container(
               padding: const EdgeInsets.symmetric(horizontal: 25.0),
-              child: Container(
-                padding: EdgeInsets.all(15),
-                decoration: BoxDecoration(
-                    color: Color(0xFF25BAC2),
-                    borderRadius: BorderRadius.circular(30)),
-                child: Center(
-                    child: Text(
-                  'Get Started',
-                  style: TextStyle(color: Colors.white),
-                )),
+              decoration: BoxDecoration(),
+              margin: EdgeInsets.all(15),
+              child: ElevatedButton(
+                child: const Text('Get Started'),
+                onPressed: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const ProfilePage()));
+                },
+                style: ElevatedButton.styleFrom(
+                    backgroundColor: Color(0xFF25BAC2), shape: StadiumBorder()),
               ),
             ),
           ]),
