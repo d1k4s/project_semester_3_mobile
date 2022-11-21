@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "646416656214",
+    "project_id": "tnbts-f5f6a",
+    "storage_bucket": "tnbts-f5f6a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:646416656214:android:8594314f2a051b10b458f7",
+        "android_client_info": {
+          "package_name": "com.roni.TNBTS"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "646416656214-2mmmak3r013d2r6tsobavd8k4rtlb440.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.roni.TNBTS",
+            "certificate_hash": "c64dbdd35cc7dadd798efc7461d5191d3e5127b5"
+          }
+        },
+        {
+          "client_id": "646416656214-58qgnuc00pe6lnom5vj75hd1koo2tcb9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA01-nxVQU9vQB7rF8CwQEyHbABhqvXMnw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "646416656214-58qgnuc00pe6lnom5vj75hd1koo2tcb9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
