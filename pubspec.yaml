@@ -34,8 +34,12 @@ dependencies:
   firebase_auth: ^4.1.1
   flutter:
     sdk: flutter
+  flutter_cached_pdfview: ^0.4.1
+  google_nav_bar: ^5.0.6
+  native_pdf_view: ^6.0.0+1
   provider: ^6.0.4
   smooth_page_indicator: ^1.0.0+2
+  url_launcher: ^6.1.7
 
 dev_dependencies:
   flutter_lints: ^2.0.0
@@ -52,7 +56,9 @@ flutter:
   uses-material-design: true
   # To add assets to your application, add an assets section, like this:
   assets:
-    - assets/logo/logoo.png
+    - assets/bromoh.jpg
+    - assets/logoo.jpg
+    - assets/pdf/pdf.pdf
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
   # For details regarding adding assets from package dependencies, see
@@ -62,10 +68,10 @@ flutter:
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
   # example:
-  # fonts:
-  #   - family: Schyler
-  #     fonts:
-  #       - asset: fonts/Schyler-Regular.ttf
+  fonts:
+    - family: KaushanScript
+      fonts:
+        - asset: assets\fonts\KaushanScript-Regular.ttf
   #       - asset: fonts/Schyler-Italic.ttf
   #         style: italic
   #   - family: Trajan Pro

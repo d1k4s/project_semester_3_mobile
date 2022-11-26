@@ -3,9 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
-import 'package:login/Register.dart';
-
-import 'home_page.dart';
+import 'package:login/BottomBar.dart';
+import 'Register.dart';
 import 'forgot_pw_page.dart';
 
 class Loginscreen extends StatefulWidget {
@@ -21,6 +20,8 @@ class _Loginscreenstate extends State<Loginscreen> {
     await FirebaseAuth.instance.signInWithEmailAndPassword(
         email: _emailController.text.trim(),
         password: _passwordController.text.trim());
+    print(_emailController.text);
+    print(_passwordController.text);
   }
 
   @override
@@ -141,7 +142,11 @@ class _Loginscreenstate extends State<Loginscreen> {
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(30)),
                     backgroundColor: Color(0xff25bac2)),
-                onPressed: signIn,
+                onPressed: () {
+                  Navigator.push(context, MaterialPageRoute(builder: (context) {
+                    return ProfilePage();
+                  }));
+                },
                 child: Text(
                   "Sign in",
                   style: TextStyle(fontSize: 20),
