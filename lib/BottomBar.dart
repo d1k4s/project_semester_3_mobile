@@ -5,6 +5,7 @@ import 'package:google_nav_bar/google_nav_bar.dart';
 import 'package:flutter/material.dart';
 import 'Page/home_page.dart';
 import 'Page/profile.dart';
+import 'Page/profile2.dart';
 import 'Page/sop.dart';
 import 'Page/tutorial.dart';
 
@@ -22,7 +23,7 @@ class _ProfilePageState extends State<ProfilePage> {
     sop(),
     Text('tutorial'),
     Tutorial(),
-    Profile(),
+    Profile2(),
   ];
 
   final PageStorageBucket bucket = PageStorageBucket();
@@ -53,24 +54,24 @@ class _ProfilePageState extends State<ProfilePage> {
                   });
                 },
               ),
-              GButton(
-                icon: Icons.info,
-                text: 'SOP',
-                onPressed: () {
-                  setState(() {
-                    currentTab = 1;
-                  });
-                },
-              ),
-              GButton(
-                icon: Icons.auto_stories,
-                text: 'Tutorial',
-                onPressed: () {
-                  setState(() {
-                    currentTab = 2;
-                  });
-                },
-              ),
+              // GButton(
+              //   icon: Icons.info,
+              //   text: 'SOP',
+              //   onPressed: () {
+              //     setState(() {
+              //       currentTab = 1;
+              //     });
+              //   },
+              // ),
+              // GButton(
+              //   icon: Icons.auto_stories,
+              //   text: 'Tutorial',
+              //   onPressed: () {
+              //     setState(() {
+              //       currentTab = 2;
+              //     });
+              //   },
+              // ),
               GButton(
                 icon: Icons.account_balance_wallet,
                 text: 'Payments',

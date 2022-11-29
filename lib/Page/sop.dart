@@ -15,12 +15,14 @@ class _sopState extends State<sop> {
       PdfController(document: PdfDocument.openAsset('assets/pdf/pdf.pdf'));
   @override
   Widget build(BuildContext context) {
-    return  Scaffold(
-  body: Center(
-    child: PdfView(
-      controller: pdfController,
-    )
-  ),
-);
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("SOP"),
+      ),
+      body: Center(
+          child: PdfView(
+        controller: pdfController,
+      )),
+    );
   }
 }
