@@ -1,6 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
+import 'package:login/imageLink/imageLink.dart';
+import 'package:login/zoom/ranuRegulo1.dart';
+import 'package:login/zoom/ranuRegulo2.dart';
+import 'package:login/zoom/ranuRegulo3.dart';
+import 'package:login/zoom/ranuRegulo4.dart';
+import 'package:login/zoom/ranuRegulo5.dart';
 
 import '../map_utils.dart';
 
@@ -89,73 +95,123 @@ class _RanuReguloState extends State<RanuRegulo> {
                                     ),
                                     Wrap(
                                       direction: Axis.horizontal,
-                                      // alignment: WrapAlignment.center,
                                       spacing: 15.0,
-                                      // runAlignment:WrapAlignment.center,
                                       runSpacing: 15.0,
-                                      // crossAxisAlignment: WrapCrossAlignment.center,
-                                      // textDirection: TextDirection.rtl,
-                                      // verticalDirection: VerticalDirection.up,
                                       children: [
-                                        Container(
-                                          height: 250,
-                                          width: 180,
-                                          decoration: BoxDecoration(
-                                              image: DecorationImage(
-                                                image: NetworkImage(
-                                                    "https://static.wixstatic.com/media/c9e873_acfcc859e596457aa55ada46180dde0c~mv2.jpeg"),
-                                                fit: BoxFit.cover,
+                                        GestureDetector(
+                                          onTap: () {
+                                            Navigator.push(context,
+                                                MaterialPageRoute(
+                                                    builder: (context) {
+                                              return ranuRegulo1();
+                                            }));
+                                          },
+                                          child: Hero(
+                                            tag: "rr1",
+                                            child: Container(
+                                              height: 250,
+                                              width: 180,
+                                              decoration: BoxDecoration(
+                                                image: DecorationImage(
+                                                  image: NetworkImage(
+                                                      imgLink.ranuRegulo1),
+                                                  fit: BoxFit.cover,
+                                                ),
                                               ),
-                                              border: Border.all(
-                                                  color: Colors.red)),
+                                            ),
+                                          ),
                                         ),
-                                        Container(
-                                          height: 250,
-                                          width: 180,
-                                          decoration: BoxDecoration(
-                                              image: DecorationImage(
-                                                image: NetworkImage(
-                                                    "https://static.wixstatic.com/media/c9e873_acfcc859e596457aa55ada46180dde0c~mv2.jpeg"),
-                                                fit: BoxFit.cover,
+                                        GestureDetector(
+                                          onTap: () {
+                                            Navigator.push(context,
+                                                MaterialPageRoute(
+                                                    builder: (context) {
+                                              return ranuRegulo2();
+                                            }));
+                                          },
+                                          child: Hero(
+                                            tag: "rr2",
+                                            child: Container(
+                                              height: 250,
+                                              width: 180,
+                                              decoration: BoxDecoration(
+                                                image: DecorationImage(
+                                                  image: NetworkImage(
+                                                      imgLink.ranuRegulo2),
+                                                  fit: BoxFit.cover,
+                                                ),
                                               ),
-                                              border: Border.all(
-                                                  color: Colors.red)),
+                                            ),
+                                          ),
                                         ),
-                                        Container(
-                                          height: 250,
-                                          width: 180,
-                                          decoration: BoxDecoration(
-                                              image: DecorationImage(
-                                                image: NetworkImage(
-                                                    "https://static.wixstatic.com/media/c9e873_acfcc859e596457aa55ada46180dde0c~mv2.jpeg"),
-                                                fit: BoxFit.cover,
+                                        GestureDetector(
+                                          onTap: () {
+                                            Navigator.push(context,
+                                                MaterialPageRoute(
+                                                    builder: (context) {
+                                              return ranuRegulo3();
+                                            }));
+                                          },
+                                          child: Hero(
+                                            tag: "rr3",
+                                            child: Container(
+                                              height: 250,
+                                              width: 180,
+                                              decoration: BoxDecoration(
+                                                image: DecorationImage(
+                                                  image: NetworkImage(
+                                                      imgLink.ranuRegulo3),
+                                                  fit: BoxFit.cover,
+                                                ),
                                               ),
-                                              border: Border.all(
-                                                  color: Colors.red)),
+                                            ),
+                                          ),
                                         ),
-                                        Container(
-                                          height: 250,
-                                          width: 180,
-                                          decoration: BoxDecoration(
-                                              image: DecorationImage(
-                                                image: NetworkImage(
-                                                    "https://static.wixstatic.com/media/c9e873_acfcc859e596457aa55ada46180dde0c~mv2.jpeg"),
-                                                fit: BoxFit.cover,
+                                        GestureDetector(
+                                          onTap: () {
+                                            Navigator.push(context,
+                                                MaterialPageRoute(
+                                                    builder: (context) {
+                                              return ranuRegulo4();
+                                            }));
+                                          },
+                                          child: Hero(
+                                            tag: "rr4",
+                                            child: Container(
+                                              height: 250,
+                                              width: 180,
+                                              decoration: BoxDecoration(
+                                                image: DecorationImage(
+                                                  image: NetworkImage(
+                                                      imgLink.ranuRegulo4),
+                                                  fit: BoxFit.cover,
+                                                ),
                                               ),
-                                              border: Border.all(
-                                                  color: Colors.red)),
+                                            ),
+                                          ),
                                         ),
-                                        Container(
-                                          height: 250,
-                                          width: 180,
-                                          decoration: BoxDecoration(
-                                              image: DecorationImage(
-                                                image: NetworkImage(
-                                                    "https://static.wixstatic.com/media/c9e873_acfcc859e596457aa55ada46180dde0c~mv2.jpeg"),
-                                                fit: BoxFit.cover,
+                                        GestureDetector(
+                                          onTap: () {
+                                            Navigator.push(context,
+                                                MaterialPageRoute(
+                                                    builder: (context) {
+                                              return ranuRegulo5();
+                                            }));
+                                          },
+                                          child: Hero(
+                                            tag: "rr5",
+                                            child: Container(
+                                              height: 250,
+                                              width: 180,
+                                              decoration: BoxDecoration(
+                                                image: DecorationImage(
+                                                  image: NetworkImage(
+                                                      imgLink.ranuRegulo5),
+                                                  fit: BoxFit.cover,
+                                                ),
                                               ),
-                                              border: Border.all(
-                                                  color: Colors.red)),
+                                            ),
+                                          ),
                                         ),
                                       ],
                                     ),
@@ -170,7 +226,8 @@ class _RanuReguloState extends State<RanuRegulo> {
                                 ),
 
                                 onPressed: () {
-                                  MapUtils.openMap(-8.0215648, 112.9524508);
+                                  MapUtils.openMap(
+                                      -8.013258455263852, 112.95062739729211);
                                 },
                                 icon: Icon(Icons
                                     .location_on), //icon data for elevated button

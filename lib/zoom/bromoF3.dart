@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:login/MorePage/Bromo.dart';
+import 'package:login/imageLink/imageLink.dart';
 
 class bromoF3 extends StatelessWidget {
   const bromoF3({super.key});
@@ -22,8 +23,7 @@ class bromoF3 extends StatelessWidget {
               decoration: BoxDecoration(
                 color: Colors.black,
                 image: DecorationImage(
-                  image: NetworkImage(
-                      "https://cdn0-production-images-kly.akamaized.net/c6wfZfI1AxJVSNWSsnZLReRv9XQ=/1200x900/smart/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/3567172/original/006768600_1631244835-20210910-hampr-3-bulan-ditutup_-hari-ini-Bromo-dibuka-untuk-wisatawan-ARBAS-2.jpg"),
+                  image: NetworkImage(imgLink.bromo3),
                   fit: BoxFit.fitWidth,
                 ),
               ),

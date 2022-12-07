@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
+import 'package:login/imageLink/imageLink.dart';
+import 'package:login/zoom/semeru1.dart';
+import 'package:login/zoom/semeru2.dart';
+import 'package:login/zoom/semeru3.dart';
+import 'package:login/zoom/semeru4.dart';
+import 'package:login/zoom/semeru5.dart';
 
 import '../map_utils.dart';
 
@@ -98,67 +102,119 @@ class SemeruState extends State<Semeru> {
                                       // verticalDirection: VerticalDirection.up,
                                       children: [
                                         GestureDetector(
-                                          onTap: (){},
-                                          child: Container(
-                                            height: 250,
-                                            width: 180,
-                                            decoration: BoxDecoration(
+                                          onTap: () {
+                                            Navigator.push(context,
+                                                MaterialPageRoute(
+                                                    builder: (context) {
+                                              return semeru1();
+                                            }));
+                                          },
+                                          child: Hero(
+                                            tag: "s1",
+                                            child: Container(
+                                              height: 250,
+                                              width: 180,
+                                              decoration: BoxDecoration(
                                                 image: DecorationImage(
                                                   image: NetworkImage(
-                                                      "https://static.wixstatic.com/media/c9e873_acfcc859e596457aa55ada46180dde0c~mv2.jpeg"),
+                                                      imgLink.semeru1),
                                                   fit: BoxFit.cover,
                                                 ),
-                                                border: Border.all(
-                                                    color: Colors.red)),
+                                              ),
+                                            ),
                                           ),
                                         ),
-                                        Container(
-                                          height: 250,
-                                          width: 180,
-                                          decoration: BoxDecoration(
-                                              image: DecorationImage(
-                                                image: NetworkImage(
-                                                    "https://static.wixstatic.com/media/c9e873_acfcc859e596457aa55ada46180dde0c~mv2.jpeg"),
-                                                fit: BoxFit.cover,
+                                        GestureDetector(
+                                          onTap: () {
+                                            Navigator.push(context,
+                                                MaterialPageRoute(
+                                                    builder: (context) {
+                                              return semeru2();
+                                            }));
+                                          },
+                                          child: Hero(
+                                            tag: "s2",
+                                            child: Container(
+                                              height: 250,
+                                              width: 180,
+                                              decoration: BoxDecoration(
+                                                image: DecorationImage(
+                                                  image: NetworkImage(
+                                                      imgLink.semeru2),
+                                                  fit: BoxFit.cover,
+                                                ),
                                               ),
-                                              border: Border.all(
-                                                  color: Colors.red)),
+                                            ),
+                                          ),
                                         ),
-                                        Container(
-                                          height: 250,
-                                          width: 180,
-                                          decoration: BoxDecoration(
-                                              image: DecorationImage(
-                                                image: NetworkImage(
-                                                    "https://static.wixstatic.com/media/c9e873_acfcc859e596457aa55ada46180dde0c~mv2.jpeg"),
-                                                fit: BoxFit.cover,
+                                        GestureDetector(
+                                          onTap: () {
+                                            Navigator.push(context,
+                                                MaterialPageRoute(
+                                                    builder: (context) {
+                                              return semeru3();
+                                            }));
+                                          },
+                                          child: Hero(
+                                            tag: "s3",
+                                            child: Container(
+                                              height: 250,
+                                              width: 180,
+                                              decoration: BoxDecoration(
+                                                image: DecorationImage(
+                                                  image: NetworkImage(
+                                                      imgLink.semeru3),
+                                                  fit: BoxFit.cover,
+                                                ),
                                               ),
-                                              border: Border.all(
-                                                  color: Colors.red)),
+                                            ),
+                                          ),
                                         ),
-                                        Container(
-                                          height: 250,
-                                          width: 180,
-                                          decoration: BoxDecoration(
-                                              image: DecorationImage(
-                                                image: NetworkImage(
-                                                    "https://static.wixstatic.com/media/c9e873_acfcc859e596457aa55ada46180dde0c~mv2.jpeg"),
-                                                fit: BoxFit.cover,
+                                        GestureDetector(
+                                          onTap: () {
+                                            Navigator.push(context,
+                                                MaterialPageRoute(
+                                                    builder: (context) {
+                                              return semeru4();
+                                            }));
+                                          },
+                                          child: Hero(
+                                            tag: "s4",
+                                            child: Container(
+                                              height: 250,
+                                              width: 180,
+                                              decoration: BoxDecoration(
+                                                image: DecorationImage(
+                                                  image: NetworkImage(
+                                                      imgLink.semeru4),
+                                                  fit: BoxFit.cover,
+                                                ),
                                               ),
-                                              border: Border.all(
-                                                  color: Colors.red)),
+                                            ),
+                                          ),
                                         ),
-                                        Container(
-                                          height: 250,
-                                          width: 180,
-                                          decoration: BoxDecoration(
-                                              image: DecorationImage(
-                                                image: NetworkImage(
-                                                    "https://static.wixstatic.com/media/c9e873_acfcc859e596457aa55ada46180dde0c~mv2.jpeg"),
-                                                fit: BoxFit.cover,
+                                        GestureDetector(
+                                          onTap: () {
+                                            Navigator.push(context,
+                                                MaterialPageRoute(
+                                                    builder: (context) {
+                                              return semeru5();
+                                            }));
+                                          },
+                                          child: Hero(
+                                            tag: "s5",
+                                            child: Container(
+                                              height: 250,
+                                              width: 180,
+                                              decoration: BoxDecoration(
+                                                image: DecorationImage(
+                                                  image: NetworkImage(
+                                                      imgLink.semeru5),
+                                                  fit: BoxFit.cover,
+                                                ),
                                               ),
-                                              border: Border.all(
-                                                  color: Colors.red)),
+                                            ),
+                                          ),
                                         ),
                                       ],
                                     ),
@@ -173,7 +229,8 @@ class SemeruState extends State<Semeru> {
                                 ),
 
                                 onPressed: () {
-                                  MapUtils.openMap(-8.0215648, 112.9524508);
+                                  MapUtils.openMap(
+                                      -8.106782254934107, 112.92240744620098);
                                 },
                                 icon: Icon(Icons
                                     .location_on), //icon data for elevated button

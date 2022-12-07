@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:login/MorePage/Bromo.dart';
+import 'package:login/imageLink/imageLink.dart';
 
 class bromoF2 extends StatelessWidget {
   const bromoF2({super.key});
@@ -22,8 +23,7 @@ class bromoF2 extends StatelessWidget {
               decoration: BoxDecoration(
                 color: Colors.black,
                 image: DecorationImage(
-                  image: NetworkImage(
-                      "https://storyblok-image.ef.com/unsafe/1500x750/filters:focal(960x375:961x376):quality(70)/f/78828/dd7b752616/ef-id-blog-top-banner-6-tips-wisata-ke-bromo-dari-malang.jpg"),
+                  image: NetworkImage(imgLink.bromo2),
                   fit: BoxFit.fitWidth,
                 ),
               ),
